@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-set-proxy.list v0.3.0 6644d296b0d17898792c1eb0e0fcc19330918ec0
+# anti-ip-attribution rule-set-proxy.list v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash RULE-SET
 DOMAIN-SUFFIX,biliapi.net
@@ -25,10 +25,14 @@ DOMAIN,httpdns.baidu.com
 DOMAIN,httpdns.baidubce.com
 DOMAIN,mp.weixin.qq.com
 IP-CIDR,103.41.167.0/24
+DOMAIN-KEYWORD,-misc-hl
 DOMAIN-KEYWORD,-normal-hl
 DOMAIN-KEYWORD,-normal-c-hl
+DOMAIN-KEYWORD,-normal-quic-hl
+DOMAIN-KEYWORD,-misc-lf
 DOMAIN-KEYWORD,-normal-lf
 DOMAIN-KEYWORD,-normal-c-lf
+DOMAIN-KEYWORD,-normal-quic-lf
 DOMAIN-KEYWORD,-core-c-lf
 DOMAIN-KEYWORD,-core-c-hl
 DOMAIN,sso.douyin.com
@@ -82,6 +86,7 @@ IP-CIDR,82.157.35.162/32
 DOMAIN,segmentfault.com
 DOMAIN,comment-api.smzdm.com
 DOMAIN,user-api.smzdm.com
+DOMAIN,qny.smzdm.com
 IP-CIDR,59.82.64.0/19
 IP-CIDR,59.82.112.0/20
 DOMAIN-SUFFIX,y.qq.com

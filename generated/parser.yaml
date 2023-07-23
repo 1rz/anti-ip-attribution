@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 6644d296b0d17898792c1eb0e0fcc19330918ec0
+# anti-ip-attribution parser.yaml v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -46,10 +46,14 @@ parsers:
     - IP-CIDR,219.143.187.136/32,REJECT
     - DOMAIN-SUFFIX,zijieapi.com,DIRECT
     - DOMAIN-SUFFIX,ecombdapi.com,DIRECT
+    - "DOMAIN-KEYWORD,-misc-hl,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-hl,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-c-hl,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-normal-quic-hl,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-misc-lf,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-lf,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-normal-c-lf,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN-KEYWORD,-normal-quic-lf,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-core-c-lf,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-KEYWORD,-core-c-hl,IP\u5F52\u5C5E\u5730"
     - DOMAIN,activity-ag.awemeughun.com,REJECT
@@ -115,17 +119,18 @@ parsers:
     - "IP-CIDR,43.140.216.125/32,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,43.140.219.33/32,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,82.157.35.162/32,IP\u5F52\u5C5E\u5730"
+    - IP-CIDR,170.33.13.246/32,REJECT
     - DOMAIN,virusinfo-cloudscan-cn.heytapmobi.com,REJECT
     - "DOMAIN,segmentfault.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,comment-api.smzdm.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,user-api.smzdm.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,qny.smzdm.com,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,59.82.64.0/19,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,59.82.112.0/20,IP\u5F52\u5C5E\u5730"
     - DOMAIN,aid.m.taobao.com,REJECT
     - DOMAIN,amdc.m.taobao.com,REJECT
     - DOMAIN,dualstack-logs.amap.com,REJECT
     - DOMAIN,acs.m.goofish.com,DIRECT
-    - DOMAIN,acs4baichuan.m.taobao.com,DIRECT
     - DOMAIN,msgacs.m.taobao.com,DIRECT
     - DOMAIN,y.qq.com,DIRECT
     - "DOMAIN-SUFFIX,y.qq.com,IP\u5F52\u5C5E\u5730"
