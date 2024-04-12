@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.0 53089a398e2b45a3ef7b79a4b5748353581faa5f
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -18,14 +18,14 @@ payload:
 - DOMAIN-SUFFIX,weibocdn.com
 - DOMAIN,gsp0.baidu.com
 - DOMAIN,hm.baidu.com
-- IP-CIDR,180.76.76.112/32
-- IP-CIDR,180.76.76.200/32
+- IP-CIDR,180.76.76.112/32,no-resolve
+- IP-CIDR,180.76.76.200/32,no-resolve
 - DOMAIN,httpsdns.baidu.com
 - DOMAIN,c.tieba.baidu.com
 - DOMAIN,httpdns.baidu.com
 - DOMAIN,httpdns.baidubce.com
 - DOMAIN,mp.weixin.qq.com
-- IP-CIDR,103.41.167.0/24
+- IP-CIDR,103.41.167.0/24,no-resolve
 - DOMAIN-KEYWORD,-misc-hl
 - DOMAIN-KEYWORD,-normal-hl
 - DOMAIN-KEYWORD,-normal-c-hl
@@ -51,6 +51,8 @@ payload:
 - DOMAIN-SUFFIX,huya.com
 - DOMAIN-SUFFIX,dongqiudi.com
 - DOMAIN,ngabbs.com
+- DOMAIN,bbs.nga.cn
+- DOMAIN,nga.178.com
 - DOMAIN,api.vip.miui.com
 - DOMAIN-SUFFIX,music.163.com
 - DOMAIN,nstool.netease.com
@@ -64,30 +66,30 @@ payload:
 - DOMAIN,ac.dun.163.com
 - DOMAIN-SUFFIX,laiqukankan.com
 - DOMAIN-SUFFIX,music.ntes53.netease.com
-- IP-CIDR,101.71.154.241/32
-- IP-CIDR,103.126.92.132/32
-- IP-CIDR,103.126.92.133/32
-- IP-CIDR,112.13.119.18/32
-- IP-CIDR,112.13.122.4/32
-- IP-CIDR,115.236.118.34/32
-- IP-CIDR,115.236.121.4/32
-- IP-CIDR,45.254.48.1/32
-- IP-CIDR,59.111.160.195/32
-- IP-CIDR,59.111.19.33/32
-- IP-CIDR,59.111.19.53/32
+- IP-CIDR,101.71.154.241/32,no-resolve
+- IP-CIDR,103.126.92.132/32,no-resolve
+- IP-CIDR,103.126.92.133/32,no-resolve
+- IP-CIDR,112.13.119.18/32,no-resolve
+- IP-CIDR,112.13.122.4/32,no-resolve
+- IP-CIDR,115.236.118.34/32,no-resolve
+- IP-CIDR,115.236.121.4/32,no-resolve
+- IP-CIDR,45.254.48.1/32,no-resolve
+- IP-CIDR,59.111.160.195/32,no-resolve
+- IP-CIDR,59.111.19.33/32,no-resolve
+- IP-CIDR,59.111.19.53/32,no-resolve
 - DOMAIN,bbs-api.mihoyo.com
 - DOMAIN,bbs-api.miyoushe.com
-- IP-CIDR,49.233.242.15/32
-- IP-CIDR,81.70.124.99/32
-- IP-CIDR,81.70.125.19/32
-- IP-CIDR,140.143.177.206/32
-- IP-CIDR,43.140.216.125/32
-- IP-CIDR,43.140.219.33/32
-- IP-CIDR,82.157.35.162/32
+- IP-CIDR,49.233.242.15/32,no-resolve
+- IP-CIDR,81.70.124.99/32,no-resolve
+- IP-CIDR,81.70.125.19/32,no-resolve
+- IP-CIDR,140.143.177.206/32,no-resolve
+- IP-CIDR,43.140.216.125/32,no-resolve
+- IP-CIDR,43.140.219.33/32,no-resolve
+- IP-CIDR,82.157.35.162/32,no-resolve
 - DOMAIN,segmentfault.com
 - DOMAIN,comment-api.smzdm.com
 - DOMAIN,user-api.smzdm.com
 - DOMAIN,qny.smzdm.com
-- IP-CIDR,59.82.64.0/19
-- IP-CIDR,59.82.112.0/20
 - DOMAIN-SUFFIX,y.qq.com
+- DOMAIN,zonai.skland.com
+- DOMAIN-SUFFIX,soulapp.cn

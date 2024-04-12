@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution surge.list v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
+# anti-ip-attribution surge.list v0.3.0 53089a398e2b45a3ef7b79a4b5748353581faa5f
 # https://github.com/lwd-temp/anti-ip-attribution
 # Surge分流规则
 DOMAIN-SUFFIX,biliapi.net
@@ -63,6 +63,8 @@ DOMAIN,god.gameyw.netease.com
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,dongqiudi.com
 DOMAIN,ngabbs.com
+DOMAIN,bbs.nga.cn
+DOMAIN,nga.178.com
 DOMAIN,api.vip.miui.com
 DOMAIN-SUFFIX,music.163.com
 DOMAIN,nstool.netease.com
@@ -115,8 +117,6 @@ DOMAIN,segmentfault.com
 DOMAIN,comment-api.smzdm.com
 DOMAIN,user-api.smzdm.com
 DOMAIN,qny.smzdm.com
-IP-CIDR,59.82.64.0/19
-IP-CIDR,59.82.112.0/20
 DOMAIN,aid.m.taobao.com,REJECT
 DOMAIN,amdc.m.taobao.com,REJECT
 DOMAIN,dualstack-logs.amap.com,REJECT
@@ -124,3 +124,7 @@ DOMAIN,acs.m.goofish.com,DIRECT
 DOMAIN,msgacs.m.taobao.com,DIRECT
 DOMAIN,y.qq.com,DIRECT
 DOMAIN-SUFFIX,y.qq.com
+DOMAIN,zonai.skland.com
+DOMAIN,china-img.soulapp.cn,DIRECT
+DOMAIN,img.soulapp.cn,DIRECT
+DOMAIN-SUFFIX,soulapp.cn

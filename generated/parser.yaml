@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
+# anti-ip-attribution parser.yaml v0.3.0 53089a398e2b45a3ef7b79a4b5748353581faa5f
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -73,6 +73,8 @@ parsers:
     - "DOMAIN-SUFFIX,huya.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,dongqiudi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,ngabbs.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,bbs.nga.cn,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,nga.178.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.vip.miui.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,music.163.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,nstool.netease.com,IP\u5F52\u5C5E\u5730"
@@ -125,8 +127,6 @@ parsers:
     - "DOMAIN,comment-api.smzdm.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,user-api.smzdm.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,qny.smzdm.com,IP\u5F52\u5C5E\u5730"
-    - "IP-CIDR,59.82.64.0/19,IP\u5F52\u5C5E\u5730"
-    - "IP-CIDR,59.82.112.0/20,IP\u5F52\u5C5E\u5730"
     - DOMAIN,aid.m.taobao.com,REJECT
     - DOMAIN,amdc.m.taobao.com,REJECT
     - DOMAIN,dualstack-logs.amap.com,REJECT
@@ -134,3 +134,7 @@ parsers:
     - DOMAIN,msgacs.m.taobao.com,DIRECT
     - DOMAIN,y.qq.com,DIRECT
     - "DOMAIN-SUFFIX,y.qq.com,IP\u5F52\u5C5E\u5730"
+    - "DOMAIN,zonai.skland.com,IP\u5F52\u5C5E\u5730"
+    - DOMAIN,china-img.soulapp.cn,DIRECT
+    - DOMAIN,img.soulapp.cn,DIRECT
+    - "DOMAIN-SUFFIX,soulapp.cn,IP\u5F52\u5C5E\u5730"
