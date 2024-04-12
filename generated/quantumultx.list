@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution quantumultx.list v0.3.0 eabfdeb0120f0dcf8caa1b5be3301287b7197854
+# anti-ip-attribution quantumultx.list v0.3.0 53089a398e2b45a3ef7b79a4b5748353581faa5f
 # https://github.com/lwd-temp/anti-ip-attribution
 # QuantumultX分流规则
 DOMAIN-SUFFIX,biliapi.net,IP
@@ -63,6 +63,8 @@ DOMAIN,god.gameyw.netease.com,IP
 DOMAIN-SUFFIX,huya.com,IP
 DOMAIN-SUFFIX,dongqiudi.com,IP
 DOMAIN,ngabbs.com,IP
+DOMAIN,bbs.nga.cn,IP
+DOMAIN,nga.178.com,IP
 DOMAIN,api.vip.miui.com,IP
 DOMAIN-SUFFIX,music.163.com,IP
 DOMAIN,nstool.netease.com,IP
@@ -115,8 +117,6 @@ DOMAIN,segmentfault.com,IP
 DOMAIN,comment-api.smzdm.com,IP
 DOMAIN,user-api.smzdm.com,IP
 DOMAIN,qny.smzdm.com,IP
-IP-CIDR,59.82.64.0/19,IP
-IP-CIDR,59.82.112.0/20,IP
 DOMAIN,aid.m.taobao.com,REJECT
 DOMAIN,amdc.m.taobao.com,REJECT
 DOMAIN,dualstack-logs.amap.com,REJECT
@@ -124,3 +124,7 @@ DOMAIN,acs.m.goofish.com,DIRECT
 DOMAIN,msgacs.m.taobao.com,DIRECT
 DOMAIN,y.qq.com,DIRECT
 DOMAIN-SUFFIX,y.qq.com,IP
+DOMAIN,zonai.skland.com,IP
+DOMAIN,china-img.soulapp.cn,DIRECT
+DOMAIN,img.soulapp.cn,DIRECT
+DOMAIN-SUFFIX,soulapp.cn,IP
