@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-reject.yaml v0.3.1 32a5884123c5718296fc8493cfd4af9de674e871
+# anti-ip-attribution rule-provider-reject.yaml v0.3.1 3bd2e7758b5790f540b76980d916902811fe68e8
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -20,6 +20,7 @@ payload:
 - IP-CIDR,116.63.10.31/32,REJECT,no-resolve
 - IP-CIDR,112.64.218.119/32,REJECT,no-resolve
 - IP-CIDR,112.65.200.117/32,REJECT,no-resolve
+- DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT
 - DOMAIN,tieba-ares.cdn.bcebos.com,REJECT
 - IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/40,REJECT,no-resolve

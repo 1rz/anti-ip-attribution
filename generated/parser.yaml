@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution parser.yaml v0.3.1 32a5884123c5718296fc8493cfd4af9de674e871
+# anti-ip-attribution parser.yaml v0.3.1 3bd2e7758b5790f540b76980d916902811fe68e8
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash for Windows的配置文件预处理功能，详见https://docs.cfw.lbyczf.com/contents/parser.html
 parsers:
@@ -34,9 +34,10 @@ parsers:
     - "DOMAIN-SUFFIX,bilibili.com,IP\u5F52\u5C5E\u5730"
     - "IP-CIDR,203.107.1.0/24,IP\u5F52\u5C5E\u5730"
     - DOMAIN-SUFFIX,bilivideo.com,DIRECT
-    - DOMAIN-SUFFIX,akamaized.net,DIRECT
     - DOMAIN-SUFFIX,hdslb.com,DIRECT
     - DOMAIN-SUFFIX,szbdyd.com,DIRECT
+    - DOMAIN,api.live.bilibili.com,DIRECT
+    - DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT
     - "DOMAIN-SUFFIX,weibo.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibo.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,weibocdn.com,IP\u5F52\u5C5E\u5730"
@@ -164,8 +165,6 @@ parsers:
     - "DOMAIN-SUFFIX,huya.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN-SUFFIX,dongqiudi.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,ngabbs.com,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,bbs.nga.cn,IP\u5F52\u5C5E\u5730"
-    - "DOMAIN,nga.178.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,bbs.nga.cn,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,nga.178.com,IP\u5F52\u5C5E\u5730"
     - "DOMAIN,api.vip.miui.com,IP\u5F52\u5C5E\u5730"

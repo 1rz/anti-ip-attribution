@@ -1,5 +1,5 @@
 # 针对部分网站显示IP归属地的分流规则
-# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 32a5884123c5718296fc8493cfd4af9de674e871
+# anti-ip-attribution rule-provider-proxy.yaml v0.3.1 3bd2e7758b5790f540b76980d916902811fe68e8
 # https://github.com/lwd-temp/anti-ip-attribution
 # 适用于Clash的Rule Provider功能，详见https://lancellc.gitbook.io/clash/clash-config-file/rule-provider
 payload:
@@ -124,8 +124,6 @@ payload:
 - DOMAIN-SUFFIX,huya.com
 - DOMAIN-SUFFIX,dongqiudi.com
 - DOMAIN,ngabbs.com
-- DOMAIN,bbs.nga.cn
-- DOMAIN,nga.178.com
 - DOMAIN,bbs.nga.cn
 - DOMAIN,nga.178.com
 - DOMAIN,api.vip.miui.com
