@@ -45,7 +45,7 @@ config:
     - IP-CIDR,203.107.1.0/24 #不需要REJECT，会影响其他HTTPDNS，仅代理即可
     # issue/49,CDN内容直连
     - DOMAIN-SUFFIX,bilivideo.com,DIRECT # 直播
-    - DOMAIN-SUFFIX,akamaized.net,DIRECT # akamai视频CDN
+    # - DOMAIN-SUFFIX,akamaized.net,DIRECT # akamai视频CDN
     - DOMAIN-SUFFIX,hdslb.com,DIRECT # 静态内容
     - DOMAIN-SUFFIX,szbdyd.com,DIRECT # PCDN(P2P)
     # - DOMAIN,api.bilibili.com # 哔哩哔哩国内网页版API域名 # 网友提供哔哩哔哩IP定位接口
@@ -59,6 +59,8 @@ config:
     # - DOMAIN-SUFFIX,im9.com
     # - DOMAIN-SUFFIX,acg.tv
     # - DOMAIN-SUFFIX,biligame.com
+    - DOMAIN,api.live.bilibili.com,DIRECT
+    - DOMAIN-SUFFIX,mcdn.bilivideo.cn,REJECT
     # ======= 微博 ======= #
     # 微博
     # issue#5 报告发表和评论操作会暴露IP，建议不要使用手机客户端，无法确定是否存在其他IP或域名，已扩充到DOMAIN-SUFFIX
@@ -306,9 +308,6 @@ config:
     # issue#19提供
     # 个人主页ip。开代理以后发一个评论就会变代理ip
     - DOMAIN,ngabbs.com
-    # issue#47提供
-    - DOMAIN,bbs.nga.cn
-    - DOMAIN,nga.178.com
     # issue#47提供
     - DOMAIN,bbs.nga.cn
     - DOMAIN,nga.178.com
